@@ -1,0 +1,92 @@
+/* Education Timeline */
+.education-timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.education-timeline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.education-timeline {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.education-animation {
+  flex: 0.5;
+  max-width: 300px;
+}
+
+.education-timeline-item {
+  margin-bottom: 20px;
+  border-left: 2px solid #ffd700;
+  padding-left: 15px;
+  transition: background-color 0.3s ease; /* Added hover effect */
+}
+
+.education-timeline-date {
+  font-size: 1.1em;
+  color: wheat;
+  font-style: italic;
+}
+
+.education-timeline-details h4 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.education-timeline-details p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: white;
+}
+
+/* Experience Timeline */
+.experience-timeline {
+  padding: 20px;
+}
+
+.experience-timeline-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.experience-timeline-item {
+  flex: 0 0 auto;
+  width: 300px;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease; /* Added hover effect */
+}
+
+.experience-timeline-item:hover {
+  transform: scale(1.01);
+}
+
+.experience-timeline-date {
+  color: wheat;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-timeline-content h4 {
+  color: #ffd700;
+}
+
+.experience-timeline-content p {
+  color: whitesmoke;
+}

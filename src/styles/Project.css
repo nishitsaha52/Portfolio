@@ -1,0 +1,138 @@
+/* Main Project Section Styling */
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+  text-align: center;
+  width: 100% important;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffd700; /* Golden color for the title */
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in; /* Fade-in effect for the title */
+}
+
+/* Loading Container */
+.loading-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Card Grid Layout */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Enhanced Card Design */
+.repo-card {
+  padding: 25px;
+  border-radius: 15px !important;
+  background: transparent !important;
+  border: 2px solid #ffd700 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #000;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.repo-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent;
+  transition: transform 0.5s ease;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.repo-card:hover::before {
+  transform: rotate(45deg) translate(50%, 50%);
+  opacity: 0.3;
+}
+
+.repo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Header for Card Title and Chip */
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.repo-header .MuiTypography-root {
+  font-weight: bold;
+  color: #ffd700;
+  font-size: 1.5rem;
+}
+
+/* Chip for Visibility Status */
+.repo-chip {
+  position: absolute !important;
+  right: 5% !important;
+  top: 5% !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 0.85rem !important;
+  border: 2px solid #ffd700 !important;
+}
+
+/* Description Styling */
+.repo-description {
+  margin: 15px 0;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  color: white !important;
+}
+
+/* Stats Footer */
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: white;
+}
+
+.repo-stats .MuiTypography-root {
+  display: flex;
+  align-items: center;
+}
+
+.language-icon {
+  margin-right: 5px;
+}
+
+/* Enhanced Button */
+button.MuiButton-outlined {
+  margin-top: 15px !important;
+  font-weight: bold !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  transition: color 0.3s ease, background-color 0.3s ease !important;
+}
+
+button.MuiButton-outlined:hover {
+  color: #282c34;
+  background-color: #ffd700;
+  border-color: #ffd700;
+}

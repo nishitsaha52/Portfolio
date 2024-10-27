@@ -1,0 +1,90 @@
+/* Wave Animation */
+.wave {
+  animation: wave-animation 2.1s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Home Section */
+.home-header {
+  padding-top: 80px;
+}
+
+.home-section {
+  position: relative;
+  background-image: var(--section-background-color);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  height: auto;
+}
+
+.home-content {
+  padding: 9rem 0 2rem;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.4em;
+  padding-left: 50px;
+}
+
+.heading-name {
+  font-size: 2.5em;
+  padding-left: 45px;
+}
+
+.main-name {
+  color: #FFD700;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em;
+  color: #FFD700;
+  font-weight: 600;
+}
+
+.Typewriter__cursor {
+  font-size: 2.4em;
+  color: #d7b704;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
+  }
+  .Typewriter__cursor {
+    display: none;
+  }
+}

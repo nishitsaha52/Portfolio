@@ -1,0 +1,119 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+/* Global Variables */
+:root {
+  /* Section Background Levels */
+  --primary-color: #FFD700;
+  --secondary-color: #0c0513;
+
+/* Section Background Levels */
+--section-bg-level-1: linear-gradient(to bottom left, rgba(1, 38, 61, 0.85), rgba(3, 50, 78, 0.9)); /* Darker */
+--section-bg-level-2: linear-gradient(to bottom left, rgba(14, 76, 109, 0.8), rgba(3, 50, 78, 0.85));
+--section-bg-level-3: linear-gradient(to bottom left, rgba(72, 186, 213, 0.75), rgba(14, 76, 109, 0.8)); /* Medium */
+--section-bg-level-4: linear-gradient(to bottom left, rgba(239, 64, 67, 0.8), rgba(190, 30, 45, 0.85));
+--section-bg-level-5: linear-gradient(to bottom left, rgba(236, 67, 67, 0.85), rgba(196, 50, 64, 0.9)); /* Brighter */
+
+/* Background Gradients for Darker Shadow */
+--background-level-1: linear-gradient(to left, rgba(1, 38, 61, 0.9), rgba(3, 50, 78, 0.9));
+--background-level-2: linear-gradient(to left, rgba(14, 76, 109, 0.85), rgba(1, 38, 61, 0.85));
+--background-level-3: linear-gradient(to left, rgba(3, 50, 78, 0.8), rgba(14, 76, 109, 0.8)); /* Medium */
+--background-level-4: linear-gradient(to left, rgba(190, 30, 45, 0.75), rgba(236, 67, 67, 0.75));
+--background-level-5: linear-gradient(to left, rgba(196, 50, 64, 0.7), rgba(239, 64, 67, 0.7));
+
+
+  /* Default Background Gradient */
+  --background-gradient: var(--background-level-3);
+}
+
+/* Global Styles */
+html {
+  font-family: "Raleway", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-image: var(--background-gradient);
+  background-attachment: fixed;
+}
+
+/* Color Classes */
+.purple {
+  color: var(--primary-color) !important;
+}
+
+p{
+  font-size: 1rem;
+  color: wheat;
+}
+
+/* Button Styles */
+button:focus {
+  box-shadow: none !important;
+}
+
+/* Horizontal Line Style */
+.divider {
+  width: 60%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-color), #ffcc00);
+  border: none;
+  margin: 0 auto 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: var(--secondary-color);
+  background-image: url(./Assets/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #504401;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+  border-radius: 12px;
+}
+
+/* Particle Styles */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

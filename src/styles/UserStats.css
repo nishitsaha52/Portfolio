@@ -1,0 +1,74 @@
+.user-stats-section {
+    padding: 60px 15px;
+    max-width: 80%;
+    background-color: var(--section-background-color);
+    color: white;
+    z-index: -1;
+}
+
+.user-stats-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.user-stats-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    background: transparent !important; /* Slightly transparent background */
+    border: 2px solid #ffd700 !important;
+    border-radius: 15px !important; /* Rounded corners */
+    color: white !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-stats-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+}
+
+.user-stats-card-title {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #ffd700 !important;
+    margin-bottom: 15px !important;
+}
+
+.language-bar-container {
+    margin-top: 15px !important;
+}
+
+.language-bar {
+    margin-bottom: 20px !important; /* Space between language bars */
+}
+
+.language-name {
+    font-size: 1.2rem !important;
+    font-weight: bold !important; /* Make language names bold */
+    margin-bottom: 5px !important; /* Space between name and bar */
+}
+
+.language-percentage-container {
+    display: flex; /* Flex container for bar and label */
+    align-items: center; /* Center items vertically */
+}
+
+.language-percentage {
+    height: 10px; /* Height for the progress bar */
+    background: linear-gradient(135deg, #ffd700, #fd1d1d); /* Gradient background for the bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the progress bar */
+    transition: width 0.5s ease; /* Smooth transition for the width */
+}
+
+.percentage-label {
+    margin-left: 10px; /* Space between bar and percentage label */
+    font-size: 1rem; /* Slightly smaller font for label */
+    color: #ffd700; /* Match title color */
+}
+
+.stats-image,
+.streak-image {
+    width: 100%;             /* Make the image fill the width of the card */
+    height: 200px;          /* Set a fixed height for the images */
+}

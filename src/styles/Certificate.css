@@ -1,0 +1,134 @@
+.certificate-section {
+  position: relative;
+  padding: 150px 0 30px;
+  background-image: var(--section-background-color);
+  color: #fff;
+  text-align: center;
+}
+
+.certificate-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.certificate-col {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: calc(0.1s * var(--animation-index));
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px) scale(1.08);
+  transition: transform 0.2s;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.certificate-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.certificate-card-text {
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .certificate-card {
+    max-width: 90%;
+  }
+
+  .certificate-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lottie Background */
+.lottieBackground {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Staggered Animation */
+.certificate-card {
+  --animation-index: 0;
+}
+
+.certificate-col:nth-child(1) .certificate-card {
+  --animation-index: 1;
+}
+
+.certificate-col:nth-child(2) .certificate-card {
+  --animation-index: 2;
+}
+
+.certificate-col:nth-child(3) .certificate-card {
+  --animation-index: 3;
+}
+
+.certificate-col:nth-child(4) .certificate-card {
+  --animation-index: 4;
+}

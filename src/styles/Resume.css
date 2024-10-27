@@ -1,0 +1,59 @@
+/* Resume Section */
+.resume-section {
+  position: relative;
+  padding: 110px 0 30px;
+  background-image: var(--section-background-color);
+  color: #fff;
+  text-align: center;
+}
+
+.resume-section .btn-download {
+  background-color: #FFD700;
+  color: #000;
+  max-width: 250px;
+  transition: background-color 0.3s ease; /* Added hover effect */
+}
+
+.resume-section .btn-download:hover {
+  background-color: #641eec;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Navigation Buttons */
+.navigation-buttons .btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  transition: background-color 0.3s ease; /* Added hover effect */
+}
+
+.navigation-buttons .btn-nav:hover {
+  background-color: #641eec;
+}
+
+.btn-nav-left {
+  left: 10px;
+}
+
+.btn-nav-right {
+  right: 10px;
+}
+
+/* Page Indicator */
+.page-indicator {
+  color: #FFD700;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+}

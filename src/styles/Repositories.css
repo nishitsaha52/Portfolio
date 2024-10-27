@@ -1,0 +1,71 @@
+.repo-section {
+    position: relative !important;
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+    color: white !important;
+  }
+
+.about-repo-card {
+    background-color: transparent !important;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; /* Changed from 50% to 10px for a more rectangular look */
+    border: 2px solid #FFD700; /* Gold border color */
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Added box-shadow transition */
+}
+
+.about-repo-card:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 15px #FFD700 !important;
+}
+
+.about-repo-card h3 {
+    font-size: 1.5em;
+    color: #FFD700;
+    margin-bottom: 10px; /* Added spacing below heading */
+}
+
+.about-repo-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #CFCFCF;
+    line-height: 1.5; /* Improved readability */
+}
+.about-repo-card .btn-primary {
+    background-color: #700c86;
+    border: 2px solid #FFD700;
+    border-radius: 30px;
+    padding: 8px 16px; /* Added padding for better button appearance */
+    font-size: 14px; /* Adjusted font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color change */
+    color: white; /* Ensure text color is always visible */
+}
+
+.about-repo-card .btn-primary:hover {
+    background-color: #FFD700;
+    color: #700c86;
+}
+
+.more-btn {
+    background-color: #700c86 !important;
+    border: 2px solid #FFD700 !important;
+    align-self: center !important;
+    justify-items: center !important;
+    border-radius: 30px !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white; /* Ensuring button text color is white */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transformations */
+    border-radius: 5px; /* Consistent rounding */
+    margin-top: 20px; /* Adds space above the Explore button */
+}
+
+.more-btn:hover {
+    background-color: #FFD700 !important;
+    color: #700c86 !important;
+    transform: scale(1.05); /* Slightly increase the button size on hover */
+    box-shadow: 0 0 10px #FFD700; /* Add a glow effect */
+}

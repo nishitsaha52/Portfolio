@@ -1,0 +1,67 @@
+.contact-section {
+  position: relative;
+  padding-top: 20px;
+  background-image: var(--section-background-color);
+  color: #fff;
+}
+
+.contact-section p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.uf-contact-form-01 {
+  max-width: 900px;
+}
+
+@media (min-width: 576px) {
+  .uf-contact-form-01 {
+    min-height: 100vh;
+    align-content: center;
+  }
+}
+
+.uf-img-contact-form-01 {
+  max-width: 100%;
+  animation: uf-animation 4s ease-in-out 1s infinite alternate;
+  position: relative;
+}
+
+label {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.uf-ct-01-text-primary {
+  color: #FFD700;
+}
+
+.uf-ct-01-btn-primary {
+  background-color: #FFD700;
+  color: #000;
+  border: 2px solid #641eec;
+}
+
+.uf-ct-01-btn-primary:hover {
+  background-color: #641eec;
+  color: #fff;
+  border: 2px solid #FFD700;
+}
+
+@keyframes uf-animation {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -30px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.form-control:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 0 0.25rem rgb(103 58 183 / 21%);
+}

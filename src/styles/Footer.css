@@ -1,0 +1,93 @@
+/* --------- */
+/* Footer */
+/* --------- */
+.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 20px 0; /* Reduced padding */
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+
+.footer-logo h2 {
+  font-size: 2.5em;
+  color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-nav {
+  margin-bottom: 10px; /* Reduced margin */
+  z-index: 1;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+}
+
+.footer-links li {
+  margin: 0 10px; /* Reduced space between links */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+}
+.footer-social{
+  z-index: 1;
+}
+.footer-social p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.footer-social-icons {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.footer-social-icons li {
+  margin: 0 8px; /* Reduced space between social icons */
+}
+
+.footer-social-icons a {
+  font-size: 1.8em;
+}
+
+.footer-social-icons .instagram {
+  color: #EA4C89;
+}
+
+.footer-social-icons .facebook {
+  color: #1877F2;
+}
+
+.footer-social-icons .twitter {
+  color: #014d7c;
+}
+
+.footer-social-icons .github {
+  color: #000;
+}
+
+.footer-social-icons .website {
+  color: #FFD700;
+}
+
+.footer-copywright p {
+  font-size: 0.9em;
+  color: wheat;
+  margin-top: 10px; /* Reduced margin */
+}
