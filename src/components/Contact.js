@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import emailjs from "emailjs-com";
 import Plane from "../Assets/plane.png";
 import "../styles/Contact.css";
 
@@ -12,15 +13,37 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Clear form fields and display success message after form submission
-    console.log("Form submitted:", { email, name, message });
+    // Configure EmailJS parameters
+    const templateParams = {
+      user_email: email,
+      user_name: name,
+      message: message,
+    };
+
+    // Send email using EmailJS
+    emailjs.send(
+      "service_x7u25d8",         // Replace with your EmailJS Service ID
+      "template_gk1qu6d",        // Replace with your EmailJS Template ID
+      templateParams,
+      "wah5fv9zNXY9jZH-E"             // Replace with your EmailJS User ID
+    ).then(
+      (result) => {
+        console.log("Email sent:", result.text);
+        setSuccessMessage("Your message has been sent successfully!");
+      },
+      (error) => {
+        console.log("Email send error:", error.text);
+        setSuccessMessage("Failed to send message. Please try again.");
+      }
+    );
+
+    // Clear form fields
     setEmail("");
     setName("");
     setMessage("");
-    setSuccessMessage("Your message has been sent successfully!");
 
-    // Clear the success message after a delay (optional)
-    setTimeout(() => setSuccessMessage(""), 5000); // Clears message after 5 seconds
+    // Clear success message after 5 seconds (optional)
+    setTimeout(() => setSuccessMessage(""), 5000);
   };
 
   return (
@@ -32,7 +55,7 @@ const Contact = () => {
               <h2 className="uf-ct-01-text-primary text-uppercase fw-bold">Contact Us</h2>
               <p>
                 Or reach out manually to{" "}
-                <a href="mailto:uifresh.net@gmail.com" className="text-decoration-none">
+                <a href="mailto:nishitsaha62@gmail.com" className="text-decoration-none">
                   nishitsaha62@gmail.com
                 </a>
               </p>
@@ -41,9 +64,7 @@ const Contact = () => {
             <div className="col-md-6">
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                  <label htmlFor="uf-imail" className="form-label">
-                    Email address
-                  </label>
+                  <label htmlFor="uf-imail" className="form-label">Email address</label>
                   <input
                     type="email"
                     className="form-control"
@@ -58,9 +79,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="uf-iname" className="form-label">
-                    Your name
-                  </label>
+                  <label htmlFor="uf-iname" className="form-label">Your name</label>
                   <input
                     type="text"
                     className="form-control"
@@ -71,9 +90,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="uf-itextarea" className="form-label">
-                    Your message
-                  </label>
+                  <label htmlFor="uf-itextarea" className="form-label">Your message</label>
                   <textarea
                     className="form-control"
                     id="uf-itextarea"
