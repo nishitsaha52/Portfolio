@@ -4,21 +4,21 @@
 .footer {
   background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
-  padding: 20px 0; /* Reduced padding */
+  padding: 10px 0; /* Reduced padding */
   font-family: 'Arial', sans-serif;
   font-size: 20px;
   color: #333;
 }
 
 .footer-logo h2 {
-  font-size: 2.5em;
+  font-size: 2em; /* Slightly reduced font size */
   color: #FFD700;
   font-weight: bold;
-  margin-bottom: 10px; /* Reduced margin */
+  margin-bottom: 5px; /* Further reduced margin */
 }
 
 .footer-nav {
-  margin-bottom: 10px; /* Reduced margin */
+  margin-bottom: 5px; /* Further reduced margin */
   z-index: 1;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .footer-links li {
-  margin: 0 10px; /* Reduced space between links */
+  margin: 0 8px; /* Slightly reduced space between links */
 }
 
 .footer-links a {
@@ -41,13 +41,15 @@
 .footer-links a:hover {
   color: #FFD700;
 }
-.footer-social{
+
+.footer-social {
   z-index: 1;
 }
+
 .footer-social p {
-  font-size: 1.2em;
+  font-size: 1em; /* Slightly reduced font size */
   font-weight: bold;
-  margin-bottom: 5px; /* Reduced margin */
+  margin-bottom: 5px; /* Further reduced margin */
 }
 
 .footer-social-icons {
@@ -59,11 +61,11 @@
 }
 
 .footer-social-icons li {
-  margin: 0 8px; /* Reduced space between social icons */
+  margin: 0 6px; /* Further reduced space between social icons */
 }
 
 .footer-social-icons a {
-  font-size: 1.8em;
+  font-size: 1.6em; /* Slightly reduced icon size */
 }
 
 .footer-social-icons .instagram {
@@ -87,7 +89,7 @@
 }
 
 .footer-copywright p {
-  font-size: 0.9em;
+  font-size: 0.8em; /* Slightly reduced font size */
   color: wheat;
-  margin-top: 10px; /* Reduced margin */
+  margin-top: 5px; /* Further reduced margin */
 }

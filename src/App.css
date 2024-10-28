@@ -7,20 +7,19 @@
   --primary-color: #FFD700;
   --secondary-color: #0c0513;
 
-/* Section Background Levels */
---section-bg-level-1: linear-gradient(to bottom left, rgba(1, 38, 61, 0.85), rgba(3, 50, 78, 0.9)); /* Darker */
---section-bg-level-2: linear-gradient(to bottom left, rgba(14, 76, 109, 0.8), rgba(3, 50, 78, 0.85));
---section-bg-level-3: linear-gradient(to bottom left, rgba(72, 186, 213, 0.75), rgba(14, 76, 109, 0.8)); /* Medium */
---section-bg-level-4: linear-gradient(to bottom left, rgba(239, 64, 67, 0.8), rgba(190, 30, 45, 0.85));
---section-bg-level-5: linear-gradient(to bottom left, rgba(236, 67, 67, 0.85), rgba(196, 50, 64, 0.9)); /* Brighter */
+  /* Section Background Levels */
+  --section-bg-level-1: linear-gradient(to bottom left, rgba(1, 38, 61, 0.85), rgba(3, 50, 78, 0.9)); /* Darker */
+  --section-bg-level-2: linear-gradient(to bottom left, rgba(14, 76, 109, 0.8), rgba(3, 50, 78, 0.85));
+  --section-bg-level-3: linear-gradient(to bottom left, rgba(72, 186, 213, 0.75), rgba(14, 76, 109, 0.8)); /* Medium */
+  --section-bg-level-4: linear-gradient(to bottom left, rgba(239, 64, 67, 0.8), rgba(190, 30, 45, 0.85));
+  --section-bg-level-5: linear-gradient(to bottom left, rgba(236, 67, 67, 0.85), rgba(196, 50, 64, 0.9)); /* Brighter */
 
-/* Background Gradients for Darker Shadow */
---background-level-1: linear-gradient(to left, rgba(1, 38, 61, 0.9), rgba(3, 50, 78, 0.9));
---background-level-2: linear-gradient(to left, rgba(14, 76, 109, 0.85), rgba(1, 38, 61, 0.85));
---background-level-3: linear-gradient(to left, rgba(3, 50, 78, 0.8), rgba(14, 76, 109, 0.8)); /* Medium */
---background-level-4: linear-gradient(to left, rgba(190, 30, 45, 0.75), rgba(236, 67, 67, 0.75));
---background-level-5: linear-gradient(to left, rgba(196, 50, 64, 0.7), rgba(239, 64, 67, 0.7));
-
+  /* Background Gradients for Darker Shadow */
+  --background-level-1: linear-gradient(to left, rgba(1, 38, 61, 0.9), rgba(3, 50, 78, 0.9));
+  --background-level-2: linear-gradient(to left, rgba(14, 76, 109, 0.85), rgba(1, 38, 61, 0.85));
+  --background-level-3: linear-gradient(to left, rgba(3, 50, 78, 0.8), rgba(14, 76, 109, 0.8)); /* Medium */
+  --background-level-4: linear-gradient(to left, rgba(190, 30, 45, 0.75), rgba(236, 67, 67, 0.75));
+  --background-level-5: linear-gradient(to left, rgba(196, 50, 64, 0.7), rgba(239, 64, 67, 0.7));
 
   /* Default Background Gradient */
   --background-gradient: var(--background-level-3);
@@ -44,7 +43,7 @@ body {
   color: var(--primary-color) !important;
 }
 
-p{
+p {
   font-size: 1rem;
   color: wheat;
 }
@@ -116,4 +115,67 @@ button:focus {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+    line-height: 1.4;
+  }
+
+  .divider {
+    width: 80%; /* Expand the divider for mobile */
+    height: 4px;
+    margin: 20px auto;
+  }
+
+  button {
+    padding: 10px 15px; /* Reduce padding for mobile devices */
+    font-size: 0.95rem;
+  }
+
+  #preloader {
+    background-size: 50px; /* Adjust preloader size */
+  }
+
+  #tsparticles {
+    background-position: center top; /* Shift particles background for mobile */
+  }
+
+  /* Adjust scrollbars */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 0.85rem; /* Further reduce font size for very small screens */
+  }
+
+  .divider {
+    width: 90%; /* Make divider almost full-width */
+    margin: 15px auto;
+  }
+
+  button {
+    padding: 8px 12px; /* Smaller padding */
+    font-size: 0.85rem;
+  }
+
+  /* Preloader background image adjustment */
+  #preloader {
+    background-size: 40px;
+  }
+
+  /* Adjust layout or hide certain elements if needed */
 }

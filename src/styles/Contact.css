@@ -1,18 +1,21 @@
 .contact-section {
   position: relative;
-  padding-top: 20px;
+  padding: 20px 15px; /* Adjust padding for mobile */
   background-image: var(--section-background-color);
   color: #fff;
 }
 
+/* Adjust font size for smaller screens */
 .contact-section p {
-  font-size: 18px;
+  font-size: 16px; /* Slightly smaller on mobile */
   font-weight: 400;
   color: #fff;
 }
 
+/* Form container adjustments */
 .uf-contact-form-01 {
-  max-width: 900px;
+  max-width: 100%; /* Full width on mobile */
+  padding: 10px; /* Add some padding */
 }
 
 @media (min-width: 576px) {
@@ -28,27 +31,29 @@
   position: relative;
 }
 
+/* Adjust label font size for readability */
 label {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Smaller font size on mobile */
   color: #fff;
 }
 
-.uf-ct-01-text-primary {
-  color: #FFD700;
-}
-
+/* Button adjustments for smaller screens */
 .uf-ct-01-btn-primary {
   background-color: #FFD700;
   color: #000;
   border: 2px solid #641eec;
+  padding: 0.5rem 1rem; /* Adjust padding */
+  font-size: 1rem; /* Smaller font size on mobile */
 }
 
+/* Hover effect */
 .uf-ct-01-btn-primary:hover {
   background-color: #641eec;
   color: #fff;
   border: 2px solid #FFD700;
 }
 
+/* Ensure animations maintain consistency */
 @keyframes uf-animation {
   0% {
     top: 0px;
@@ -61,7 +66,34 @@ label {
   }
 }
 
+/* Focus effect for form inputs */
 .form-control:focus {
   border-color: #FFD700;
   box-shadow: 0 0 0 0.25rem rgb(103 58 183 / 21%);
+}
+
+/* Additional media queries for smaller screens */
+@media (max-width: 575px) {
+  .contact-section {
+    padding: 15px; /* Reduced padding on very small screens */
+    margin-top: 150px;
+  }
+
+  .uf-contact-form-01 {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-section p {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .uf-ct-01-btn-primary {
+    width: 100%; /* Make buttons full-width on mobile */
+    padding: 0.7rem 1rem; /* Ensure comfortable touch area */
+    font-size: 0.9rem; /* Smaller font */
+  }
+
+  label {
+    font-size: 1rem; /* Smaller label text for mobile */
+  }
 }

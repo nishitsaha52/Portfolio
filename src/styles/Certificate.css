@@ -1,3 +1,7 @@
+/* --------- */
+/* Certificates */
+/* --------- */
+
 .certificate-section {
   position: relative;
   padding: 150px 0 30px;
@@ -15,6 +19,7 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Certificate Grid and Cards */
 .certificate-grid {
   display: flex;
   flex-wrap: wrap;
@@ -65,35 +70,60 @@
   color: #f0f0f0;
 }
 
-/* Media Queries */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .certificate-card {
-    max-width: 90%;
+      max-width: 90%; /* Ensure cards take up more space on smaller screens */
   }
 
   .certificate-title {
-    font-size: 2.2rem;
+      font-size: 2.2rem; /* Adjust font size for smaller screens */
+      margin-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-section {
+      padding: 80px 0 20px; /* Reduce padding on very small screens */
+  }
+
+  .certificate-title {
+      font-size: 1.8rem; /* Further reduce font size on mobile */
+      margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .certificate-card {
+      padding: 15px; /* Reduce padding within cards */
+      max-width: 95%; /* Cards span almost full width on mobile */
+  }
+
+  .certificate-card-title {
+      font-size: 1.3rem; /* Smaller font for card titles */
+  }
+
+  .certificate-card-text {
+      font-size: 0.9rem; /* Smaller text on mobile */
   }
 }
 
 /* Animation Keyframes */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+      opacity: 0;
   }
   to {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+      opacity: 0;
+      transform: translateY(20px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
   }
 }
 

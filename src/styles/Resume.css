@@ -1,26 +1,33 @@
 /* Resume Section */
 .resume-section {
   position: relative;
-  padding: 110px 0 30px;
+  padding: 80px 15px 30px; /* Adjusted padding for mobile */
   background-image: var(--section-background-color);
   color: #fff;
   text-align: center;
 }
 
+/* Download Button */
 .resume-section .btn-download {
   background-color: #FFD700;
   color: #000;
   max-width: 250px;
-  transition: background-color 0.3s ease; /* Added hover effect */
+  width: 100%; /* Full width on mobile */
+  padding: 10px; /* Adjust padding */
+  margin: 15px 0; /* Space around the button */
+  transition: background-color 0.3s ease;
 }
 
 .resume-section .btn-download:hover {
   background-color: #641eec;
 }
 
+/* Resume Container */
 .resume {
   display: flex;
   justify-content: center;
+  flex-direction: column; /* Stack content vertically on smaller screens */
+  align-items: center;
   position: relative;
 }
 
@@ -35,13 +42,14 @@
   background-color: #FFD700;
   color: #000;
   border: none;
-  transition: background-color 0.3s ease; /* Added hover effect */
+  transition: background-color 0.3s ease;
 }
 
 .navigation-buttons .btn-nav:hover {
   background-color: #641eec;
 }
 
+/* Adjust positions for navigation buttons */
 .btn-nav-left {
   left: 10px;
 }
@@ -53,7 +61,43 @@
 /* Page Indicator */
 .page-indicator {
   color: #FFD700;
-  font-size: 2rem;
+  font-size: 1.8rem; /* Adjust font size for smaller screens */
   font-style: italic;
   text-align: center;
+  margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .resume-section {
+    padding: 60px 15px 30px; /* Further reduce padding */
+    margin-top: 100px;
+  }
+
+  .resume {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .navigation-buttons .btn-nav {
+    padding: 8px; /* Smaller button size for mobile */
+  }
+
+  .btn-nav-left {
+    left: 5px; /* Adjust positioning */
+  }
+
+  .btn-nav-right {
+    right: 5px; /* Adjust positioning */
+  }
+
+  .page-indicator {
+    font-size: 1.5rem; /* Reduce font size for better mobile display */
+  }
+
+  /* Download Button Adjustments */
+  .resume-section .btn-download {
+    padding: 8px 0; /* Adjust padding for mobile */
+    font-size: 1rem; /* Slightly smaller text */
+  }
 }

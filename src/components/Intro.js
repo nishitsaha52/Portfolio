@@ -100,6 +100,8 @@ const styles = {
     textAlign: 'center',
     zIndex: 1,  // Ensure content is on top of background
     color: 'white',
+    padding: '20px',
+    maxWidth: '90%', // Prevent overflow on smaller screens
   },
   title: {
     fontSize: '36px',
@@ -117,14 +119,17 @@ const styles = {
   },
   form: {
     marginTop: '20px',
+    display: 'flex',
+    flexDirection: 'column', // Stack elements on smaller screens
+    alignItems: 'center',
   },
   label: {
     fontSize: '18px',
     fontWeight: 'bold',
     color: '#ffffff',
+    marginBottom: '10px', // Add space between label and input
   },
   input: {
-    marginLeft: '10px',
     padding: '8px',
     fontSize: '16px',
     borderRadius: '5px',
@@ -132,9 +137,11 @@ const styles = {
     backgroundColor: 'rgba(255, 255, 255, 0.2)', // Slightly transparent background for the input
     color: '#ffffff', // White text inside input
     outline: 'none',
+    marginBottom: '10px', // Space between input and button
+    width: '80%', // Reduce width on smaller screens
+    maxWidth: '300px', // Prevent it from being too wide
   },
   button: {
-    marginLeft: '10px',
     padding: '8px 15px',
     fontSize: '16px',
     cursor: 'pointer',
@@ -144,6 +151,33 @@ const styles = {
     border: 'none',
     transition: 'background-color 0.3s ease, color 0.3s ease',
   },
+  '@media (max-width: 768px)': {
+    title: {
+      fontSize: '28px',
+    },
+    welcome: {
+      fontSize: '20px',
+    },
+    button: {
+      padding: '6px 12px',
+      fontSize: '14px',
+    },
+  },
+  '@media (max-width: 480px)': {
+    title: {
+      fontSize: '24px',
+    },
+    welcome: {
+      fontSize: '18px',
+    },
+    button: {
+      padding: '5px 10px',
+      fontSize: '12px',
+    },
+    input: {
+      width: '90%',
+    },
+  }
 };
 
 export default Intro;
