@@ -3,6 +3,7 @@
   padding: 20px 15px; /* Adjust padding for mobile */
   background-image: var(--section-background-color);
   color: #fff;
+  margin-top: 50px;
 }
 
 /* Adjust font size for smaller screens */

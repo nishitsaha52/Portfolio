@@ -13,19 +13,26 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Configure EmailJS parameters
+    // Ensure all fields are filled
+    if (!email || !name || !message) {
+      setSuccessMessage("Please fill in all fields.");
+      return;
+    }
+
     const templateParams = {
       user_email: email,
       user_name: name,
       message: message,
+      current_year: new Date().getFullYear(),
     };
 
-    // Send email using EmailJS
+    console.log("Template Params:", templateParams); // Log to check parameters
+
     emailjs.send(
-      "service_x7u25d8",         // Replace with your EmailJS Service ID
-      "template_gk1qu6d",        // Replace with your EmailJS Template ID
+      "service_x7u25d8",         
+      "template_ymu7k1a",        
       templateParams,
-      "wah5fv9zNXY9jZH-E"             // Replace with your EmailJS User ID
+      "wah5fv9zNXY9jZH-E"        
     ).then(
       (result) => {
         console.log("Email sent:", result.text);
@@ -37,14 +44,12 @@ const Contact = () => {
       }
     );
 
-    // Clear form fields
     setEmail("");
     setName("");
     setMessage("");
-
-    // Clear success message after 5 seconds (optional)
     setTimeout(() => setSuccessMessage(""), 5000);
-  };
+};
+
 
   return (
     <div className="contact-section">
@@ -114,5 +119,5 @@ const Contact = () => {
     </div>
   );
 };
-
+ 
 export default Contact;
