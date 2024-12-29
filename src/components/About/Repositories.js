@@ -31,7 +31,7 @@ function Repositories() {
   }, []);
 
   const handleExploreClick = () => {
-    navigate("/projects"); // Redirect to the Projects page
+    navigate("/project"); // Redirect to the Projects page
   };
 
   return (

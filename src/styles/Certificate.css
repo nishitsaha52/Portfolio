@@ -21,8 +21,8 @@
 
 /* Certificate Grid and Cards */
 .certificate-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
   padding: 0 20px;

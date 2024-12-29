@@ -1,28 +1,29 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
-/* Global Variables */
 :root {
   /* Section Background Levels */
   --primary-color: #FFD700;
   --secondary-color: #0c0513;
 
-  /* Section Background Levels */
-  --section-bg-level-1: linear-gradient(to bottom left, rgba(1, 38, 61, 0.85), rgba(3, 50, 78, 0.9)); /* Darker */
+  --section-bg-level-1: linear-gradient(to bottom left, rgba(1, 38, 61, 0.85), rgba(3, 50, 78, 0.9));
   --section-bg-level-2: linear-gradient(to bottom left, rgba(14, 76, 109, 0.8), rgba(3, 50, 78, 0.85));
-  --section-bg-level-3: linear-gradient(to bottom left, rgba(72, 186, 213, 0.75), rgba(14, 76, 109, 0.8)); /* Medium */
+  --section-bg-level-3: linear-gradient(to bottom left, rgba(72, 186, 213, 0.75), rgba(14, 76, 109, 0.8)); 
   --section-bg-level-4: linear-gradient(to bottom left, rgba(239, 64, 67, 0.8), rgba(190, 30, 45, 0.85));
-  --section-bg-level-5: linear-gradient(to bottom left, rgba(236, 67, 67, 0.85), rgba(196, 50, 64, 0.9)); /* Brighter */
+  --section-bg-level-5: linear-gradient(to bottom left, rgba(236, 67, 67, 0.85), rgba(196, 50, 64, 0.9));
 
   /* Background Gradients for Darker Shadow */
   --background-level-1: linear-gradient(to left, rgba(1, 38, 61, 0.9), rgba(3, 50, 78, 0.9));
   --background-level-2: linear-gradient(to left, rgba(14, 76, 109, 0.85), rgba(1, 38, 61, 0.85));
-  --background-level-3: linear-gradient(to left, rgba(3, 50, 78, 0.8), rgba(14, 76, 109, 0.8)); /* Medium */
+  --background-level-3: linear-gradient(to left, rgba(3, 50, 78, 0.8), rgba(14, 76, 109, 0.8)); 
   --background-level-4: linear-gradient(to left, rgba(190, 30, 45, 0.75), rgba(236, 67, 67, 0.75));
   --background-level-5: linear-gradient(to left, rgba(196, 50, 64, 0.7), rgba(239, 64, 67, 0.7));
 
   /* Default Background Gradient */
   --background-gradient: var(--background-level-3);
+
+  /* Smooth Transitions */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Global Styles */

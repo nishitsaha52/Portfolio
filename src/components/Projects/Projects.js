@@ -105,7 +105,7 @@ const Project = () => {
                     <Typography variant="caption"><AiOutlineEye /> Watchers: {repo.watchers}</Typography>
                   </div>
                   <Button
-                    href={repo.url}
+                    href={repo.html_url}
                     target="_blank"
                     variant="outlined"
                     endIcon={<FaGithub />}

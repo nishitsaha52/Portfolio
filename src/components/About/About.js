@@ -63,7 +63,6 @@ function About() {
 
         {/* Hobbies and Fun Facts Component */}
         <HobbiesAndFunFacts />
-
         <Education />
         <Experience />
         <Repositories />
